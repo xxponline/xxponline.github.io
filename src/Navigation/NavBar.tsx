@@ -8,10 +8,9 @@ function NavBar(){
         <div className="StandardNavBar">
             <div></div>
             <nav className={"NavList"}>
-                <div className="NavItem" onClick={()=>{GoSectionViewStart("#welcome_section")}}>WELCOME</div>
-                <div className="NavItem" onClick={()=>{GoSectionViewCenter("#skills_section")}}>SKILLS</div>
-                <div className="NavItem" onClick={()=>{GoSectionViewStart("#featured_project_nav_section")}}>PORTFOLIO</div>
-                {/*<div className="NavItem">EXPERIMENTAL</div>*/}
+                <button className="NavItem" onClick={()=>{GoSectionViewStart("#welcome_section")}}>WELCOME</button>
+                <button className="NavItem" onClick={()=>{GoSectionViewCenter("#skills_section")}}>SKILLS</button>
+                <button className="NavItem" onClick={()=>{GoSectionViewStart("#featured_project_nav_section")}}>PORTFOLIO</button>
             </nav>
         </div>
     );

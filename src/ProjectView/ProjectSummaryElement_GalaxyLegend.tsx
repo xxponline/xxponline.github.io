@@ -32,7 +32,7 @@ class ProjectSummaryElement_GalaxyLegend extends React.Component {
                                 }}>
                                     GALAXY LEGEND
                                 </div>
-                                <button className="SummaryEngineButton">
+                                <button className="SummaryEngineButtonWithoutClick">
                                     <EngineLogo/>
                                     <div style={{ fontSize: "15px"}}>Built by In-House Engine</div>
                                 </button>

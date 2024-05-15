@@ -1,21 +1,46 @@
+
+.SkillItemWithoutClick
+{
+    all: unset;
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+
+    width: auto;
+    margin: 10px 10px;
+    font-size: 22px;
+    color: #333333;
+}
+
 .SkillItem
 {
     all: unset;
     display: flex;
     align-items: center;
     padding: 5px 5px;
-    font-family : Quicksand, Arial;
-    /*box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);*/
-    /*border-color: transparent;*/
-    /*border-bottom-color: #3498db；*/
+
+    border-radius: 10px;
+    width: auto;
+    margin: 10px 10px;
+    font-size: 22px;
+    color: #333333;
+    background-color: #00000010;
+    transition: background-color .5s cubic-bezier(.05,0,0,1);
 }
 
+.SkillItem:hover
+{
+    background-color: #00000020;
+}
+
+.SkillItemWithoutClick > svg,
 .SkillItem > svg
 {
     width: 50px;
     height: 50px;
 }
 
+.SkillItemWithoutClick > span,
 .SkillItem > span
 {
     padding: 0 10px;

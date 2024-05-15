@@ -16,11 +16,22 @@
     padding: 10px 10px;
 }
 
-.NavItem{
+.NavItem
+{
+    all: unset;
+    border-radius: 5px;
     width: auto;
     padding: 0px 10px;
+    margin: 0px 10px;
     font-family: 'Quicksand', Arial;
     font-size: 22px;
     color: #333333;
     align-content: center;
+    background-color: #00000010;
+    transition: background-color .5s cubic-bezier(.05,0,0,1);
+}
+
+.NavItem:hover
+{
+    background-color: #00000020;
 }

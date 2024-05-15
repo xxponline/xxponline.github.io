@@ -29,10 +29,10 @@ import commonUrl from "../CommonUrl";
 
 function Skills(){
     return(
-        <section id="skills_section" style={{padding: "50px 10vw", background: `url(${BackgroundUri})`}} >
+        <section id="skills_section" style={{padding: "50px 10vw", background: `url(${BackgroundUri})`, backgroundSize: "100% auto"}} >
             <div style={{backgroundColor: "#FFFFFFA0", borderRadius: 25}}>
                 <div style={{ fontFamily: "Quicksand, Arial", fontSize: "40px", padding: "10px 10px"}}>
-                    About My Skills
+                    SKILLS
                 </div>
                 <div style={{display:"flex", justifyContent: "space-around"}}>
                     <div style={{padding: "10px 0px"}}>
@@ -76,19 +76,19 @@ function Skills(){
                     </div>
                     <div style={{padding: "10px 0px"}}>
                         <div style={{ fontFamily: "Quicksand, Arial", fontSize: "18px", padding: "10px 10px"}}>Fields</div>
-                        <div className="SkillItem">
+                        <div className="SkillItemWithoutClick">
                             <GamePlayFieldIcon/><span>GamePlay</span>
                         </div>
-                        <div className="SkillItem">
+                        <div className="SkillItemWithoutClick">
                             <EngineFieldIcon/><span>Engine</span>
                         </div>
-                        <div className="SkillItem">
+                        <div className="SkillItemWithoutClick">
                             <ToolsFieldIcon/><span>Tools</span>
                         </div>
-                        <div className="SkillItem">
+                        <div className="SkillItemWithoutClick">
                             <UIFieldIcon/><span>UI</span>
                         </div>
-                        <div className="SkillItem">
+                        <div className="SkillItemWithoutClick">
                             <ScriptingFieldIcon/><span>Scripting</span>
                         </div>
                     </div>

@@ -1,0 +1,61 @@
+.img-slider-btn
+{
+    all: unset;
+    display: block;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 100ms ease-in-out;
+}
+
+@keyframes squish {
+    50% {
+        scale: 1.4 0.6;
+    }
+}
+
+.img-slider-btn:hover,
+.img-slider-btn:focus-visible
+{
+    background-color: #00000030;
+}
+
+.img-slider-btn:hover > *,
+.img-slider-btn:focus-visible > * {
+    animation: squish 200ms ease-in-out;
+}
+
+.img-slider-index-btn
+{
+    all: unset;
+    display: block;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    transition: background-color 100ms ease-in-out;
+}
+
+img-slider-index-btn:hover,
+img-slider-index-btn:focus-visible
+{
+    background-color: #00000030;
+}
+
+.img-slider-index-btn:hover > *,
+.img-slider-index-btn:focus-visible > * {
+    animation: squish 200ms ease-in-out;
+}
+
+@media not (prefers-reduced-motion) {
+    .img-slider-img {
+        transition: translate 300ms ease-out;
+    }
+
+    /*.img-slider-btn:hover > *,*/
+    /*.img-slider-btn:focus-visible > * {*/
+    /*    animation: squish 200ms ease-in-out;*/
+    /*}*/
+}

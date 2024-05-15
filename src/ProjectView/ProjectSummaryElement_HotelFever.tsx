@@ -1,0 +1,73 @@
+import React from "react";
+import commonUrl from "../CommonUrl";
+import {ReactComponent as EngineLogo} from "../assets/icons/engine_framework/unity_logo.svg";
+import {ReactComponent as WebsiteIcon} from "../assets/icons/url-internet-svgrepo-com.svg";
+import {ReactComponent as AppstoreLogo} from "../assets/icons/platform/apple-appstore.svg";
+import {ReactComponent as GooglePlayLogo} from "../assets/icons/platform/googleplay.svg";
+import ProjectPhotoSlider from "./ProjectPhotoSlider";
+import BackgroundUri from "../assets/past_project_resources/hotel_fever/bg.png";
+
+class ProjectSummaryElement_HotelFever extends React.Component {
+    render() {
+        const id_title : string = "Title_HotelFever";
+        const id_SummaryContent : string = "Content_HotelFever";
+
+        const appstoreUrl : string = 'https://apps.apple.com/us/app/hotel-fever-doorman-mania/id1529588261';
+        const googlePlayUrl : string = 'https://play.google.com/store/apps/details?id=com.digitalkingdom.hotelfever';
+
+
+
+        return (
+            <section>
+                <div className="StandardProjectSummaryElement" style={{ backgroundImage: `url(${BackgroundUri})`, backgroundSize: "100% auto"}}>
+                    <div id={id_title} className="StandardProjectSummaryElementTitle">
+                        <div  style={{
+                            fontFamily: "Quicksand, Merriweather, serif", width: "80%", textAlign: "center",
+                            borderRadius : 10 ,backgroundColor: "#FFFFFFA0",
+                            display: "flex", justifyContent: "space-between", zIndex: 1, position: "relative"
+                        }}>
+                            <div style={{ display: "flex" }}>
+                                <div style={{ color: "#594F42", height: "50%", fontSize: "40px",
+                                    letterSpacing: ".2em", padding: "0 10px"
+                                }}>
+                                    HOTEL FEVER
+                                </div>
+                                <button className="SummaryEngineButton" onClick={() => {window.open(commonUrl.unityUrl)}}>
+                                    <EngineLogo/>
+                                    <div style={{ fontSize: "15px"}}>Built by UnityEngine</div>
+                                </button>
+                            </div>
+                            <div style={{ display: "flex" }}>
+                                <button className="SummaryPublishButton" onClick={() => {window.open(appstoreUrl)}}>
+                                    <AppstoreLogo/>
+                                </button>
+                                <button className="SummaryPublishButton" onClick={() => {window.open(googlePlayUrl)}}>
+                                    <GooglePlayLogo/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id={id_SummaryContent} style={{width: "100%", position:"relative"}} >
+                        <div style={{ marginLeft: "30vw", width: "60vw",
+                            maxWidth: "900px", position: "relative", zIndex: 1 }}>
+                            <div>
+                                <ProjectPhotoSlider>
+                                    <img src= {require("../assets/past_project_resources/hotel_fever/1.webp")} alt="hotel_fever_img_1" style={{ height: "100%" }}/>
+                                    <img src= {require("../assets/past_project_resources/hotel_fever/2.webp")} alt="hotel_fever_img_2" style={{ height: "100%" }}/>
+                                    <img src= {require("../assets/past_project_resources/hotel_fever/3.webp")} alt="hotel_fever_img_3" style={{ height: "100%" }}/>
+                                    <img src= {require("../assets/past_project_resources/hotel_fever/4.webp")} alt="hotel_fever_img_3" style={{ height: "100%" }}/>
+                                    <img src= {require("../assets/past_project_resources/hotel_fever/5.webp")} alt="hotel_fever_img_3" style={{ height: "100%" }}/>
+                                    <img src= {require("../assets/past_project_resources/hotel_fever/6.webp")} alt="hotel_fever_img_3" style={{ height: "100%" }}/>
+                                </ProjectPhotoSlider>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        );
+    }
+}
+
+export default ProjectSummaryElement_HotelFever;

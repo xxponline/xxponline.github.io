@@ -1,0 +1,26 @@
+.StandardNavBar
+{
+    width: 100%;
+    height: 50px;
+    background-color: #FFFCF7;
+    position: sticky;
+    top: 0px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.NavList{
+    display: flex;
+    padding: 10px 10px;
+}
+
+.NavItem{
+    width: auto;
+    padding: 0px 10px;
+    font-family: 'Quicksand', Arial;
+    font-size: 22px;
+    color: #333333;
+    align-content: center;
+}

@@ -18,7 +18,7 @@ class ProjectSummaryElement_GalaxyLegend extends React.Component {
         const googlePlayUrl : string = 'https://play.google.com/store/apps/details?id=com.tap4fun.galaxyempire2_android';
 
         return (
-            <section>
+            <section id="project_gl_section">
                 <div className="StandardProjectSummaryElement" style={{ background: `url(${BackgroundUri})`, backgroundSize: "100% auto"}}>
                     <div id={id_title} className="StandardProjectSummaryElementTitle">
                         <div  style={{

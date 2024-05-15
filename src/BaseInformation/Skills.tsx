@@ -29,7 +29,7 @@ import commonUrl from "../CommonUrl";
 
 function Skills(){
     return(
-        <section style={{padding: "50px 10vw", background: `url(${BackgroundUri})`}} >
+        <section id="skills_section" style={{padding: "50px 10vw", background: `url(${BackgroundUri})`}} >
             <div style={{backgroundColor: "#FFFFFFA0", borderRadius: 25}}>
                 <div style={{ fontFamily: "Quicksand, Arial", fontSize: "40px", padding: "10px 10px"}}>
                     About My Skills

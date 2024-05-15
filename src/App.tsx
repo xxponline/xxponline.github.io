@@ -10,6 +10,7 @@ import ProjectSummaryElement_GalaxyLegend from "./ProjectView/ProjectSummaryElem
 import ProjectSummaryElement_SaintSeiya from "./ProjectView/ProjectSummaryElement_SaintSeiya";
 import ProjectSummaryElement_HotelFever from "./ProjectView/ProjectSummaryElement_HotelFever";
 import ProjectSummaryElement_MergeElfLand from "./ProjectView/ProjectSummaryElement_MergeElfLand";
+import FeaturedProjectNavBar from "./Navigation/FeaturedProjectNavBar";
 
 function App() {
   return (
@@ -20,20 +21,7 @@ function App() {
 
           <Welcome/>
           <Skills/>
-          {/*<header className="App-header">*/}
-          {/*  <img src={logo} className="App-logo" alt="logo" />*/}
-          {/*  <p>*/}
-          {/*    Edit <code>src/App.tsx</code> and save to reload.*/}
-          {/*  </p>*/}
-          {/*  <a*/}
-          {/*    className="App-link"*/}
-          {/*    href="https://reactjs.org"*/}
-          {/*    target="_blank"*/}
-          {/*    rel="noopener noreferrer"*/}
-          {/*  >*/}
-          {/*    Learn React*/}
-          {/*  </a>*/}
-          {/*</header>*/}
+          <FeaturedProjectNavBar/>
           <ProjectSummaryElement_Palia />
           <ProjectSummaryElement_GalaxyLegend/>
           <ProjectSummaryElement_SaintSeiya/>

@@ -2,7 +2,7 @@ import React from "react";
 
 function Welcome(){
     return(
-        <div style={{ height: "90vh", display: "flex", justifyContent: "center", alignItems: "center"}}>
+        <section id="welcome_section" style={{ height: "90vh", display: "flex", justifyContent: "center", alignItems: "center"}}>
             <header style={{fontFamily : "Quicksand, Arial", textAlign: "left", padding: "120px 100px",
                 display: "block"}}>
                 <h1 style={{ fontSize: "40", fontWeight: "normal", padding: "20px 0"}}>Hey There!</h1>
@@ -20,7 +20,7 @@ function Welcome(){
                     <span><a href="mailto:xxponline@live.com" target="_blank" style={{padding: "0 0.5rem"}}>xxponline@live.com</a></span>
                 </h3>
             </header>
-        </div>
+        </section>
     );
 }
 

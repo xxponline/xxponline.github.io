@@ -20,7 +20,7 @@ class ProjectSummaryElement_Palia extends React.Component {
 
 
         return (
-            <section>
+            <section id="project_palia_section">
                 <div className="StandardProjectSummaryElement" style={{ backgroundColor : "#FEF4E6" }}>
                     <div id={id_title} className="StandardProjectSummaryElementTitle">
                         <div  style={{

@@ -18,7 +18,7 @@ class ProjectSummaryElement_HotelFever extends React.Component {
 
 
         return (
-            <section>
+            <section id="project_h3_section">
                 <div className="StandardProjectSummaryElement" style={{ backgroundImage: `url(${BackgroundUri})`, backgroundSize: "100% auto"}}>
                     <div id={id_title} className="StandardProjectSummaryElementTitle">
                         <div  style={{

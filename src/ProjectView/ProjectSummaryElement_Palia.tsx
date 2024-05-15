@@ -23,11 +23,7 @@ class ProjectSummaryElement_Palia extends React.Component {
             <section id="project_palia_section">
                 <div className="StandardProjectSummaryElement" style={{ backgroundColor : "#FEF4E6" }}>
                     <div id={id_title} className="StandardProjectSummaryElementTitle">
-                        <div  style={{
-                            fontFamily: "Quicksand, Merriweather, serif", width: "80%", textAlign: "center",
-                            borderRadius : 10 ,backgroundColor: "#FFFFFFA0",
-                            display: "flex", justifyContent: "space-between", zIndex: 1, position: "relative"
-                        }}>
+                        <div>
                             <div style={{ display: "flex" }}>
                                 <div style={{ color: "#594F42", height: "50%", fontSize: "40px",
                                     letterSpacing: ".2em", padding: "0 10px"

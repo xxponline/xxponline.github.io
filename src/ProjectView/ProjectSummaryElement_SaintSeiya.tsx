@@ -21,11 +21,7 @@ class ProjectSummaryElement_SaintSeiya extends React.Component {
             <section id="project_ss_section">
                 <div className="StandardProjectSummaryElement" style={{ backgroundImage: `url(${BackgroundUri})`, backgroundSize: "100% auto"}}>
                     <div id={id_title} className="StandardProjectSummaryElementTitle">
-                        <div  style={{
-                            fontFamily: "Quicksand, Merriweather, serif", width: "80%", textAlign: "center",
-                            borderRadius : 10 ,backgroundColor: "#FFFFFFA0",
-                            display: "flex", justifyContent: "space-between", zIndex: 1, position: "relative"
-                        }}>
+                        <div>
                             <div style={{ display: "flex" }}>
                                 <div style={{ color: "#594F42", height: "50%", fontSize: "40px",
                                     letterSpacing: ".2em", padding: "0 10px"
@@ -65,8 +61,8 @@ class ProjectSummaryElement_SaintSeiya extends React.Component {
                                 </ProjectPhotoSlider>
                             </div>
                         </div>
-                        <div style={{ position: "absolute", bottom: "-20px", right: "-30px",
-                            minWidth: "200px", width: "45vw" }}>
+                        <div style={{ position: "absolute", bottom: "0", right: "0",
+                            minWidth: "200px", width: "35vw" }}>
                             <img style={{ width: "100%" }}
                                  src={require("../assets/past_project_resources/saint_seiya/npc1.png")}
                             />

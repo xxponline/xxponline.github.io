@@ -7,7 +7,17 @@
 .StandardProjectSummaryElementTitle
 {
     padding: 20px 10%;
-    width: 100%;
+}
+
+.StandardProjectSummaryElementTitle > div {
+    font-family: Quicksand, Merriweather;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #FFFFFFA0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    position: relative;
 }
 
 .SummaryEngineButtonWithoutClick

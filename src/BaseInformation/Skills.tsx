@@ -26,74 +26,109 @@ import {ReactComponent as EngineFieldIcon} from "../assets/icons/engine_framewor
 import BackgroundUri from "../assets/skillsBg.png";
 
 import commonUrl from "../CommonUrl";
+import StandardButton from "../Common/StandardButton";
+import NoInteractButton from "../Common/NoInteractButton";
 
-function Skills(){
-    return(
-        <section id="skills_section" style={{padding: "50px 10vw", background: `url(${BackgroundUri})`, backgroundSize: "100% auto"}} >
-            <div style={{backgroundColor: "#FFFFFFA0", borderRadius: 25}}>
-                <div style={{ fontFamily: "Quicksand, Arial", fontSize: "40px", padding: "10px 10px"}}>
-                    SKILLS
+function Skills() {
+    return (
+        <section id="skills_section"
+                 style={{padding: "50px 10vw", background: `url(${BackgroundUri})`, backgroundSize: "100% auto"}}>
+            <div style={{backgroundColor: "#FFFFFFA0"}}>
+                <div>
+                    <div style={{fontFamily: "Quicksand, Arial", fontSize: "40px", padding: "10px 10px"}}>
+                        SKILLS
+                    </div>
+                    <div style={{display: "flex", justifyContent: "space-around"}}>
+                        <div style={{padding: "10px 0px"}}>
+                            <div style={{
+                                fontFamily: "Quicksand, Arial",
+                                fontSize: "18px",
+                                padding: "10px 10px"
+                            }}>Programming Language
+                            </div>
+                            <StandardButton className="SkillItem" onClick={() => {
+                                window.open(commonUrl.csharpUrl)
+                            }}>
+                                <CSharpLogo/><span>C#</span>
+                            </StandardButton>
+                            <StandardButton className="SkillItem" onClick={() => {
+                                window.open(commonUrl.cppUrl)
+                            }}>
+                                <CppLogo/><span>C++</span>
+                            </StandardButton>
+                            <StandardButton className="SkillItem" onClick={() => {
+                                window.open(commonUrl.luaUrl)
+                            }}>
+                                <LuaLogo/><span>Lua</span>
+                            </StandardButton>
+                            <StandardButton className="SkillItem" onClick={() => {
+                                window.open(commonUrl.pythonUrl)
+                            }}>
+                                <PythonLogo/><span>Python</span>
+                            </StandardButton>
+                            <StandardButton className="SkillItem" onClick={() => {
+                                window.open(commonUrl.asUrl)
+                            }}>
+                                <AsLogo/><span>ActionScript</span>
+                            </StandardButton>
+                            <StandardButton className="SkillItem" onClick={() => {
+                                window.open(commonUrl.tsUrl)
+                            }}>
+                                <TsLogo/><span>TypeScript</span>
+                            </StandardButton>
+                            <StandardButton className="SkillItem" onClick={() => {
+                                window.open(commonUrl.rust)
+                            }}>
+                                <RustLogo/><span>Rust</span>
+                            </StandardButton>
+                        </div>
+                        <div style={{padding: "10px 0px"}}>
+                            <div style={{fontFamily: "Quicksand, Arial", fontSize: "18px", padding: "10px 10px"}}>Engine
+                                / Framework
+                            </div>
+                            <StandardButton className="SkillItem" onClick={() => {
+                                window.open(commonUrl.unityUrl)
+                            }}>
+                                <UnityLogo/><span>Unity</span>
+                            </StandardButton>
+                            <StandardButton className="SkillItem" onClick={() => {
+                                window.open(commonUrl.unrealUrl)
+                            }}>
+                                <UnrealLogo/><span>Unreal</span>
+                            </StandardButton>
+                            <StandardButton className="SkillItem" onClick={() => {
+                                window.open(commonUrl.cocosUrl)
+                            }}>
+                                <CocosLogo/><span>Cocos</span>
+                            </StandardButton>
+                            <StandardButton className="SkillItem" onClick={() => {
+                                window.open(commonUrl.nodeJsUrl)
+                            }}>
+                                <NodeLogo/><span>Node JS</span>
+                            </StandardButton>
+                        </div>
+                        <div style={{padding: "10px 0px"}}>
+                            <div
+                                style={{fontFamily: "Quicksand, Arial", fontSize: "18px", padding: "10px 10px"}}>Fields
+                            </div>
+                            <NoInteractButton className="SkillItemWithoutClick">
+                                <GamePlayFieldIcon/><span>GamePlay</span>
+                            </NoInteractButton>
+                            <NoInteractButton className="SkillItemWithoutClick">
+                                <EngineFieldIcon/><span>Engine</span>
+                            </NoInteractButton>
+                            <NoInteractButton className="SkillItemWithoutClick">
+                                <ToolsFieldIcon/><span>Tools</span>
+                            </NoInteractButton>
+                            <NoInteractButton className="SkillItemWithoutClick">
+                                <UIFieldIcon/><span>UI</span>
+                            </NoInteractButton>
+                            <NoInteractButton className="SkillItemWithoutClick">
+                                <ScriptingFieldIcon/><span>Scripting</span>
+                            </NoInteractButton>
+                        </div>
+                    </div>
                 </div>
-                <div style={{display:"flex", justifyContent: "space-around"}}>
-                    <div style={{padding: "10px 0px"}}>
-                        <div style={{ fontFamily: "Quicksand, Arial", fontSize: "18px", padding: "10px 10px"}}>Programming Language</div>
-                        <button className="SkillItem" onClick={()=>{window.open(commonUrl.csharpUrl)}}>
-                            <CSharpLogo/><span>C#</span>
-                        </button>
-                        <button className="SkillItem" onClick={()=>{window.open(commonUrl.cppUrl)}}>
-                            <CppLogo/><span>C++</span>
-                        </button>
-                        <button className="SkillItem" onClick={()=>{window.open(commonUrl.luaUrl)}}>
-                            <LuaLogo/><span>Lua</span>
-                        </button>
-                        <button className="SkillItem" onClick={()=>{window.open(commonUrl.pythonUrl)}}>
-                            <PythonLogo/><span>Python</span>
-                        </button>
-                        <button className="SkillItem" onClick={()=>{window.open(commonUrl.asUrl)}}>
-                            <AsLogo/><span>ActionScript</span>
-                        </button>
-                        <button className="SkillItem" onClick={()=>{window.open(commonUrl.tsUrl)}}>
-                            <TsLogo/><span>TypeScript</span>
-                        </button>
-                        <button className="SkillItem" onClick={()=>{window.open(commonUrl.rust)}}>
-                            <RustLogo/><span>Rust</span>
-                        </button>
-                    </div>
-                    <div style={{padding: "10px 0px"}}>
-                        <div style={{ fontFamily: "Quicksand, Arial", fontSize: "18px", padding: "10px 10px"}}>Engine / Framework</div>
-                        <button className="SkillItem" onClick={()=>{window.open(commonUrl.unityUrl)}}>
-                            <UnityLogo/><span>Unity</span>
-                        </button>
-                        <button className="SkillItem" onClick={()=>{window.open(commonUrl.unrealUrl)}}>
-                            <UnrealLogo/><span>Unreal</span>
-                        </button>
-                        <button className="SkillItem" onClick={()=>{window.open(commonUrl.cocosUrl)}}>
-                            <CocosLogo/><span>Cocos</span>
-                        </button>
-                        <button className="SkillItem" onClick={()=>{window.open(commonUrl.nodeJsUrl)}}>
-                            <NodeLogo/><span>Node JS</span>
-                        </button>
-                    </div>
-                    <div style={{padding: "10px 0px"}}>
-                        <div style={{ fontFamily: "Quicksand, Arial", fontSize: "18px", padding: "10px 10px"}}>Fields</div>
-                        <div className="SkillItemWithoutClick">
-                            <GamePlayFieldIcon/><span>GamePlay</span>
-                        </div>
-                        <div className="SkillItemWithoutClick">
-                            <EngineFieldIcon/><span>Engine</span>
-                        </div>
-                        <div className="SkillItemWithoutClick">
-                            <ToolsFieldIcon/><span>Tools</span>
-                        </div>
-                        <div className="SkillItemWithoutClick">
-                            <UIFieldIcon/><span>UI</span>
-                        </div>
-                        <div className="SkillItemWithoutClick">
-                            <ScriptingFieldIcon/><span>Scripting</span>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </section>
     );

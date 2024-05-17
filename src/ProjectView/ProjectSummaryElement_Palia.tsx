@@ -6,6 +6,7 @@ import "./ProjectSummaryElement.css"
 import ProjectPhotoSlider from "./ProjectPhotoSlider";
 import { ReactComponent as WebsiteIcon } from "../assets/icons/url-internet-svgrepo-com.svg";
 import commonUrl from "../CommonUrl";
+import StandardButton from "../Common/StandardButton";
 
 class ProjectSummaryElement_Palia extends React.Component {
 
@@ -24,27 +25,29 @@ class ProjectSummaryElement_Palia extends React.Component {
                 <div className="StandardProjectSummaryElement" style={{ backgroundColor : "#FEF4E6" }}>
                     <div id={id_title} className="StandardProjectSummaryElementTitle">
                         <div>
-                            <div style={{ display: "flex" }}>
-                                <div style={{ color: "#594F42", height: "50%", fontSize: "40px",
+                            <div style={{ display: "flex", alignItems:"center" }}>
+                                <div style={{ color: "#594F42" , fontSize: "40px",
                                     letterSpacing: ".2em", padding: "0 10px"
                                 }}>
                                     PALIA
                                 </div>
-                                <button className="SummaryEngineButton" onClick={() => {window.open(commonUrl.unrealUrl)}}>
-                                    <EngineLogo/>
-                                    <div style={{ fontSize: "15px"}}>Built by UnrealEngine</div>
-                                </button>
+                                <div>
+                                    <StandardButton className="SummaryEngineButton" onClick={() => {window.open(commonUrl.unrealUrl)}}>
+                                        <EngineLogo/>
+                                        <div style={{ fontSize: "15px"}}>Built by UnrealEngine</div>
+                                    </StandardButton>
+                                </div>
                             </div>
                             <div style={{ display: "flex" }}>
-                                <button className="SummaryPublishButton" onClick={() => {window.open(webSiteUrl)}}>
+                                <StandardButton className="SummaryPublishButton" onClick={() => {window.open(webSiteUrl)}}>
                                     <WebsiteIcon/>
-                                </button>
-                                <button className="SummaryPublishButton" onClick={() => {window.open(steamUrl)}}>
+                                </StandardButton>
+                                <StandardButton className="SummaryPublishButton" onClick={() => {window.open(steamUrl)}}>
                                     <SteamLogo/>
-                                </button>
-                                <button className="SummaryPublishButton" onClick={() => {window.open(nintendoUrl)}}>
+                                </StandardButton>
+                                <StandardButton className="SummaryPublishButton" onClick={() => {window.open(nintendoUrl)}}>
                                     <NSLogo/>
-                                </button>
+                                </StandardButton>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,102 @@
+@FirstSectionAnimLen: .15s;
+@SecondSectionAnimLen: .1s;
+
+.StandardButtonInteractBgEffect{
+  background-color: #00000008;
+  transition: background-color @FirstSectionAnimLen+@SecondSectionAnimLen cubic-bezier(.05,0,0,1);
+  &:hover{
+    background-color: #00000000;
+  }
+}
+
+.StandardButtonInteractEffect
+{
+  &:before, &:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: #000;
+    transition: width @SecondSectionAnimLen ease-in;
+  }
+
+  &:hover:before, &:hover:after {
+    width: 100%;
+  }
+
+  &:before{
+    right: 0;
+    top: 0;
+  }
+
+  &:after{
+    left: 0;
+    bottom: 0;
+  }
+
+  > div{
+    &:before, &:after{
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 0;
+      background-color: #000;
+      transition: height @FirstSectionAnimLen ease-in;
+    }
+
+    &:hover:before, &:hover:after {
+      height: 100%;
+    }
+
+    &:before{
+      left: 0;
+      top: 0;
+    }
+
+    &:after{
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  //Anim delay
+  &:before, &:after{
+    transition-delay: 0s;
+  }
+  > div
+  {
+    &:before, &:after{
+      transition-delay: @SecondSectionAnimLen;
+    }
+  }
+
+  &:hover:before, &:hover:after{
+    transition-delay: @FirstSectionAnimLen;
+  }
+  > div
+  {
+    &:hover:before, &:hover:after{
+      transition-delay: 0s;
+    }
+  }
+  //End Anim Len
+}
+
+.StandardButtonNoInteract
+{
+  margin: 10px;
+  position: relative;
+
+  > div{
+    padding: 5px;
+    font-family: 'Quicksand', Arial;
+    font-size: 22px;
+    cursor: default;
+  }
+}
+
+.StandardButton{
+  .StandardButtonNoInteract();
+  .StandardButtonInteractEffect();
+  .StandardButtonInteractBgEffect();
+}

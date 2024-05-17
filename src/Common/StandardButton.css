@@ -1,0 +1,149 @@
+.StandardButtonInteractBgEffect {
+  background-color: #00000008;
+  transition: background-color 0.25s cubic-bezier(0.05, 0, 0, 1);
+}
+.StandardButtonInteractBgEffect:hover {
+  background-color: #00000000;
+}
+.StandardButtonInteractEffect:before,
+.StandardButtonInteractEffect:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  transition: width 0.1s ease-in;
+}
+.StandardButtonInteractEffect:hover:before,
+.StandardButtonInteractEffect:hover:after {
+  width: 100%;
+}
+.StandardButtonInteractEffect:before {
+  right: 0;
+  top: 0;
+}
+.StandardButtonInteractEffect:after {
+  left: 0;
+  bottom: 0;
+}
+.StandardButtonInteractEffect > div:before,
+.StandardButtonInteractEffect > div:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 0;
+  background-color: #000;
+  transition: height 0.15s ease-in;
+}
+.StandardButtonInteractEffect > div:hover:before,
+.StandardButtonInteractEffect > div:hover:after {
+  height: 100%;
+}
+.StandardButtonInteractEffect > div:before {
+  left: 0;
+  top: 0;
+}
+.StandardButtonInteractEffect > div:after {
+  right: 0;
+  bottom: 0;
+}
+.StandardButtonInteractEffect:before,
+.StandardButtonInteractEffect:after {
+  transition-delay: 0s;
+}
+.StandardButtonInteractEffect > div:before,
+.StandardButtonInteractEffect > div:after {
+  transition-delay: 0.1s;
+}
+.StandardButtonInteractEffect:hover:before,
+.StandardButtonInteractEffect:hover:after {
+  transition-delay: 0.15s;
+}
+.StandardButtonInteractEffect > div:hover:before,
+.StandardButtonInteractEffect > div:hover:after {
+  transition-delay: 0s;
+}
+.StandardButtonNoInteract {
+  margin: 10px;
+  position: relative;
+}
+.StandardButtonNoInteract > div {
+  padding: 5px;
+  font-family: 'Quicksand', Arial;
+  font-size: 22px;
+  cursor: default;
+}
+.StandardButton {
+  margin: 10px;
+  position: relative;
+  background-color: #00000008;
+  transition: background-color 0.25s cubic-bezier(0.05, 0, 0, 1);
+}
+.StandardButton > div {
+  padding: 5px;
+  font-family: 'Quicksand', Arial;
+  font-size: 22px;
+  cursor: default;
+}
+.StandardButton:before,
+.StandardButton:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #000;
+  transition: width 0.1s ease-in;
+}
+.StandardButton:hover:before,
+.StandardButton:hover:after {
+  width: 100%;
+}
+.StandardButton:before {
+  right: 0;
+  top: 0;
+}
+.StandardButton:after {
+  left: 0;
+  bottom: 0;
+}
+.StandardButton > div:before,
+.StandardButton > div:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 0;
+  background-color: #000;
+  transition: height 0.15s ease-in;
+}
+.StandardButton > div:hover:before,
+.StandardButton > div:hover:after {
+  height: 100%;
+}
+.StandardButton > div:before {
+  left: 0;
+  top: 0;
+}
+.StandardButton > div:after {
+  right: 0;
+  bottom: 0;
+}
+.StandardButton:before,
+.StandardButton:after {
+  transition-delay: 0s;
+}
+.StandardButton > div:before,
+.StandardButton > div:after {
+  transition-delay: 0.1s;
+}
+.StandardButton:hover:before,
+.StandardButton:hover:after {
+  transition-delay: 0.15s;
+}
+.StandardButton > div:hover:before,
+.StandardButton > div:hover:after {
+  transition-delay: 0s;
+}
+.StandardButton:hover {
+  background-color: #00000000;
+}
+/*# sourceMappingURL=StandardButton.css.map */

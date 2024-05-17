@@ -29,7 +29,7 @@ export default function ProjectPhotoSlider(props : any)
         <div>
             <div style={{
                 aspectRatio: "16/9",
-                backgroundColor: "#ffffff", borderRadius: 20, boxShadow: "0 34px 86px rgba(0, 0, 0, .4)",
+                backgroundColor: "#ffffff", boxShadow: "10px 10px 10px rgba(0, 0, 0, .75)",
                 width: "100%", display: "flex", flexDirection: "column",
                 overflow: "hidden", objectFit: "cover"
             }}>

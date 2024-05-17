@@ -19,18 +19,10 @@
     align-items: center;
     padding: 5px 5px;
 
-    border-radius: 10px;
     width: auto;
     margin: 10px 10px;
     font-size: 22px;
     color: #333333;
-    background-color: #00000010;
-    transition: background-color .5s cubic-bezier(.05,0,0,1);
-}
-
-.SkillItem:hover
-{
-    background-color: #00000020;
 }
 
 .SkillItemWithoutClick > svg,

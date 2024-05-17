@@ -12,7 +12,6 @@
 .StandardProjectSummaryElementTitle > div {
     font-family: Quicksand, Merriweather;
     text-align: center;
-    border-radius: 10px;
     background-color: #FFFFFFA0;
     display: flex;
     justify-content: space-between;
@@ -26,9 +25,7 @@
     display: flex;
     align-items: center;
     padding: 0px 5px;
-    border-radius: 5px;
     width: auto;
-    margin: 10px 10px;
     font-size: 22px;
     color: #333333;
 }
@@ -38,20 +35,8 @@
     all: unset;
     display: flex;
     align-items: center;
-    padding: 0px 5px;
-    border-radius: 5px;
-    width: auto;
-    margin: 10px 10px;
     font-size: 22px;
     color: #333333;
-
-    background-color: #00000010;
-    transition: background-color .5s cubic-bezier(.05,0,0,1);
-}
-
-.SummaryEngineButton:hover
-{
-    background-color: #00000020;
 }
 
 .SummaryEngineButtonWithoutClick >svg,
@@ -59,7 +44,6 @@
 {
     width: 20px;
     height: 20px;
-    padding: 5px;
 }
 
 .SummaryPublishButton
@@ -68,18 +52,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /*padding: 0 10px;*/
-    margin: 10px 10px;
-    border-radius: 5px;
-
-    background-color: #00000010;
-    transition: background-color .5s cubic-bezier(.05,0,0,1);
 }
 
-.SummaryPublishButton:hover
-{
-    background-color: #00000020;
-}
 
 .SummaryPublishButton > svg
 {

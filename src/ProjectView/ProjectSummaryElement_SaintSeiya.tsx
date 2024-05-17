@@ -5,6 +5,7 @@ import {ReactComponent as WebsiteIcon} from "../assets/icons/url-internet-svgrep
 import {ReactComponent as AppStoreIcon} from "../assets/icons/platform/apple-appstore.svg";
 import ProjectPhotoSlider from "./ProjectPhotoSlider";
 import BackgroundUri from "../assets/past_project_resources/saint_seiya/bg.png";
+import StandardButton from "../Common/StandardButton";
 
 class ProjectSummaryElement_SaintSeiya extends React.Component {
 
@@ -22,24 +23,26 @@ class ProjectSummaryElement_SaintSeiya extends React.Component {
                 <div className="StandardProjectSummaryElement" style={{ backgroundImage: `url(${BackgroundUri})`, backgroundSize: "100% auto"}}>
                     <div id={id_title} className="StandardProjectSummaryElementTitle">
                         <div>
-                            <div style={{ display: "flex" }}>
-                                <div style={{ color: "#594F42", height: "50%", fontSize: "40px",
+                            <div style={{ display: "flex", alignItems:"center" }}>
+                                <div style={{ color: "#594F42", fontSize: "40px",
                                     letterSpacing: ".2em", padding: "0 10px"
                                 }}>
                                     SAINT SEIYA
                                 </div>
-                                <button className="SummaryEngineButton" onClick={() => {window.open(commonUrl.unityUrl)}}>
-                                    <EngineLogo/>
-                                    <div style={{ fontSize: "15px"}}>Built by UnityEngine</div>
-                                </button>
+                                <div>
+                                    <StandardButton className="SummaryEngineButton" onClick={() => {window.open(commonUrl.unityUrl)}}>
+                                        <EngineLogo/>
+                                        <div style={{ fontSize: "15px"}}>Built by UnityEngine</div>
+                                    </StandardButton>
+                                </div>
                             </div>
                             <div style={{ display: "flex" }}>
-                                <button className="SummaryPublishButton" onClick={() => {window.open(webSiteUrl)}}>
+                                <StandardButton className="SummaryPublishButton" onClick={() => {window.open(webSiteUrl)}}>
                                     <WebsiteIcon/>
-                                </button>
-                                <button className="SummaryPublishButton" onClick={() => {window.open(appstoreUrl)}}>
+                                </StandardButton>
+                                <StandardButton className="SummaryPublishButton" onClick={() => {window.open(appstoreUrl)}}>
                                     <AppStoreIcon/>
-                                </button>
+                                </StandardButton>
                             </div>
                         </div>
                     </div>

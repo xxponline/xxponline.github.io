@@ -5,6 +5,7 @@ import {ReactComponent as EngineLogo} from "../assets/icons/engine_framework/uni
 import {ReactComponent as AppstoreLogo} from "../assets/icons/platform/apple-appstore.svg";
 import {ReactComponent as GooglePlayLogo} from "../assets/icons/platform/googleplay.svg";
 import ProjectPhotoSlider from "./ProjectPhotoSlider";
+import StandardButton from "../Common/StandardButton";
 
 class ProjectSummaryElement_MergeElfLand extends React.Component {
     render() {
@@ -21,24 +22,26 @@ class ProjectSummaryElement_MergeElfLand extends React.Component {
                 <div className="StandardProjectSummaryElement" style={{ backgroundImage: `url(${BackgroundUri})`, backgroundSize: "100% auto"}}>
                     <div id={id_title} className="StandardProjectSummaryElementTitle">
                         <div>
-                            <div style={{ display: "flex" }}>
-                                <div style={{ color: "#594F42", height: "50%", fontSize: "40px",
+                            <div style={{ display: "flex", alignItems:"center" }}>
+                                <div style={{ color: "#594F42", fontSize: "40px",
                                     letterSpacing: ".2em", padding: "0 10px"
                                 }}>
                                     MERGE ELF LAND
                                 </div>
-                                <button className="SummaryEngineButton" onClick={() => {window.open(commonUrl.unityUrl)}}>
-                                    <EngineLogo/>
-                                    <div style={{ fontSize: "15px"}}>Built by UnityEngine</div>
-                                </button>
+                                <div>
+                                    <StandardButton className="SummaryEngineButton" onClick={() => {window.open(commonUrl.unityUrl)}}>
+                                        <EngineLogo/>
+                                        <div style={{ fontSize: "15px"}}>Built by UnityEngine</div>
+                                    </StandardButton>
+                                </div>
                             </div>
                             <div style={{ display: "flex" }}>
-                                <button className="SummaryPublishButton" onClick={() => {window.open(appstoreUrl)}}>
+                                <StandardButton className="SummaryPublishButton" onClick={() => {window.open(appstoreUrl)}}>
                                     <AppstoreLogo/>
-                                </button>
-                                <button className="SummaryPublishButton" onClick={() => {window.open(googlePlayUrl)}}>
+                                </StandardButton>
+                                <StandardButton className="SummaryPublishButton" onClick={() => {window.open(googlePlayUrl)}}>
                                     <GooglePlayLogo/>
-                                </button>
+                                </StandardButton>
                             </div>
                         </div>
                     </div>

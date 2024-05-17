@@ -7,6 +7,8 @@ import { ReactComponent as WebsiteIcon } from "../assets/icons/url-internet-svgr
 import { ReactComponent as AppstoreLogo} from "../assets/icons/platform/apple-appstore.svg";
 import { ReactComponent as GooglePlayLogo} from "../assets/icons/platform/googleplay.svg";
 import commonUrl from "../CommonUrl";
+import NoInteractButton from "../Common/NoInteractButton";
+import StandardButton from "../Common/StandardButton";
 
 class ProjectSummaryElement_GalaxyLegend extends React.Component {
     render() {
@@ -22,27 +24,29 @@ class ProjectSummaryElement_GalaxyLegend extends React.Component {
                 <div className="StandardProjectSummaryElement" style={{ background: `url(${BackgroundUri})`, backgroundSize: "100% auto"}}>
                     <div id={id_title} className="StandardProjectSummaryElementTitle">
                         <div>
-                            <div style={{ display: "flex" }}>
-                                <div style={{ color: "#594F42", height: "50%", fontSize: "40px",
+                            <div style={{ display: "flex", alignItems:"center" }}>
+                                <div style={{ color: "#594F42", fontSize: "40px",
                                     letterSpacing: ".2em", padding: "0 10px"
                                 }}>
                                     GALAXY LEGEND
                                 </div>
-                                <button className="SummaryEngineButtonWithoutClick">
-                                    <EngineLogo/>
-                                    <div style={{ fontSize: "15px"}}>Built by In-House Engine</div>
-                                </button>
+                                <div>
+                                    <NoInteractButton className="SummaryEngineButtonWithoutClick">
+                                        <EngineLogo/>
+                                        <div style={{ fontSize: "15px"}}>Built by In-House Engine</div>
+                                    </NoInteractButton>
+                                </div>
                             </div>
                             <div style={{ display: "flex" }}>
-                                <button className="SummaryPublishButton" onClick={() => {window.open(webSiteUrl)}}>
+                                <StandardButton className="SummaryPublishButton" onClick={() => {window.open(webSiteUrl)}}>
                                     <WebsiteIcon/>
-                                </button>
-                                <button className="SummaryPublishButton" onClick={() => {window.open(appStoreUrl)}}>
+                                </StandardButton>
+                                <StandardButton className="SummaryPublishButton" onClick={() => {window.open(appStoreUrl)}}>
                                     <AppstoreLogo/>
-                                </button>
-                                <button className="SummaryPublishButton" onClick={() => {window.open(googlePlayUrl)}}>
+                                </StandardButton>
+                                <StandardButton className="SummaryPublishButton" onClick={() => {window.open(googlePlayUrl)}}>
                                     <GooglePlayLogo/>
-                                </button>
+                                </StandardButton>
                             </div>
                         </div>
                     </div>

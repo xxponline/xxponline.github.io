@@ -67,13 +67,13 @@ class ProjectSummaryElement_Palia extends React.Component {
                                 </ProjectPhotoSlider>
                             </div>
                         </div>
-                        <div style={{ position: "absolute", bottom: "5px", width: "10vw"}} >
+                        <div style={{ position: "absolute", bottom: "5px", width: "10vw", maxWidth: "150px"}} >
                             <img style={{ width: "100%" }}
                                  src={require("../assets/past_project_resources/palia/npc_1.png")}
                             />
                         </div>
                         <div style={{ position: "absolute", bottom: "5px", right: "0px",
-                            minWidth: "200px", width: "50vw" }}>
+                            minWidth: "200px", maxWidth: "770px", width: "50vw" }}>
                             <img style={{ width: "100%" }}
                                  src={require("../assets/past_project_resources/palia/npc_2.webp")}
                             />

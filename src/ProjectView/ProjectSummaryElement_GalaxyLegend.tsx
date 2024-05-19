@@ -64,7 +64,7 @@ class ProjectSummaryElement_GalaxyLegend extends React.Component {
                                 </ProjectPhotoSlider>
                             </div>
                         </div>
-                        <div style={{ position: "absolute", bottom: "5px", width: "32vw"}} >
+                        <div style={{ position: "absolute", bottom: "-12px", width: "32vw", maxWidth: "500px"}} >
                             <img style={{ width: "100%" }}
                                  src={require("../assets/past_project_resources/galaxy_legend/npc_1.png")}
                             />

@@ -61,7 +61,7 @@ class ProjectSummaryElement_MergeElfLand extends React.Component {
                             </div>
                         </div>
                         <div style={{ position: "absolute", bottom: "0", right: "0",
-                            minWidth: "200px", width: "35vw" }}>
+                            minWidth: "200px", width: "35vw", maxWidth: "590px" }}>
                             <img style={{ width: "100%" }}
                                  src={require("../assets/past_project_resources/merge_elf_land/npc.png")}
                             />

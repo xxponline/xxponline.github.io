@@ -14,7 +14,7 @@ function IndividualStuffNavBar() {
                     Individual Stuff:
                 </div>
                 <StandardButton onClick={() => {
-                    GoSectionViewCenter("#project_palia_section")
+                    GoSectionViewCenter("#project_nonlinear_editor_section")
                 }}>Nonlinear Editor & SampleAnimation-Bind Exhibit</StandardButton>
             </nav>
 

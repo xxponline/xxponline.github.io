@@ -3,12 +3,12 @@ import { ReactComponent as EngineLogo} from "../assets/icons/engine_framework/un
 import { ReactComponent as SteamLogo} from "../assets/icons/platform/steam.svg";
 import { ReactComponent as NSLogo} from "../assets/icons/platform/nitendo-switch.svg";
 import "./ProjectSummaryElement.css"
-import ProjectPhotoSlider from "./ProjectPhotoSlider";
 import { ReactComponent as WebsiteIcon } from "../assets/icons/url-internet-svgrepo-com.svg";
 import commonUrl from "../CommonUrl";
 import StandardButton from "../Common/StandardButton";
+import IProjectSummaryProps from "./ProjectSummaryProps";
 
-class ProjectSummaryElement_Palia extends React.Component {
+class ProjectSummaryElement_Palia extends React.Component<IProjectSummaryProps> {
 
     render() {
         const id_title : string = "Title_Palia";
@@ -22,7 +22,7 @@ class ProjectSummaryElement_Palia extends React.Component {
 
         return (
             <section id="project_palia_section">
-                <div className="StandardProjectSummaryElement" style={{ backgroundColor : "#FEF4E6" }}>
+                <div className="StandardProjectSummaryElement">
                     <div id={id_title} className="StandardProjectSummaryElementTitle">
                         <div>
                             <div style={{ display: "flex", alignItems:"center" }}>
@@ -31,50 +31,65 @@ class ProjectSummaryElement_Palia extends React.Component {
                                 }}>
                                     PALIA
                                 </div>
-                                <div>
-                                    <StandardButton className="SummaryEngineButton" onClick={() => {window.open(commonUrl.unrealUrl)}}>
-                                        <EngineLogo/>
-                                        <div style={{ fontSize: "15px"}}>Built by UnrealEngine</div>
-                                    </StandardButton>
-                                </div>
-                            </div>
-                            <div style={{ display: "flex" }}>
-                                <StandardButton className="SummaryPublishButton" onClick={() => {window.open(webSiteUrl)}}>
-                                    <WebsiteIcon/>
-                                </StandardButton>
-                                <StandardButton className="SummaryPublishButton" onClick={() => {window.open(steamUrl)}}>
-                                    <SteamLogo/>
-                                </StandardButton>
-                                <StandardButton className="SummaryPublishButton" onClick={() => {window.open(nintendoUrl)}}>
-                                    <NSLogo/>
-                                </StandardButton>
                             </div>
                         </div>
                     </div>
 
 
-                    <div id={id_SummaryContent} style={{width: "100%", position:"relative"}} >
-                        <div style={{ marginLeft: "10vw", width: "60vw",
-                            maxWidth: "900px", position: "relative", zIndex: 1 }}>
-                            <div>
-                                <ProjectPhotoSlider>
-                                    <img src= {require("../assets/past_project_resources/palia/1.webp")} alt="Palia_img_1" style={{ height: "100%" }}/>
-                                    <img src= {require("../assets/past_project_resources/palia/2.webp")} alt="Palia_img_2" style={{ height: "100%" }}/>
-                                    <img src= {require("../assets/past_project_resources/palia/3.webp")} alt="Palia_img_3" style={{ height: "100%" }}/>
-                                    <img src= {require("../assets/past_project_resources/palia/4.webp")} alt="Palia_img_3" style={{ height: "100%" }}/>
-                                    <img src= {require("../assets/past_project_resources/palia/5.webp")} alt="Palia_img_3" style={{ height: "100%" }}/>
-                                    <img src= {require("../assets/past_project_resources/palia/6.webp")} alt="Palia_img_3" style={{ height: "100%" }}/>
-                                </ProjectPhotoSlider>
+                    <div id={id_SummaryContent} style={{width: "100%", height: "500px", position: "relative"}}>
+                        <div style={{
+                            color: "#594F42", fontSize: "20px", backgroundColor: "#FFFFFFC0",
+                            margin: "20px 10px 20px 100px", padding: "20px 20px",
+                            position: "relative", zIndex: 1,
+                            textAlign: "left"
+                        }}>
+                            <div style={{float: "right"}}>
+                                <StandardButton className="SummaryEngineButton" onClick={this.props.onClickThumbnail}>
+                                    <img style={{width: "320px", height: "180px", float: "right"}}
+                                         src={require("../assets/past_project_resources/palia/1.webp")}/>
+                                </StandardButton>
                             </div>
+
+                            <p>Palia is multiplayer cozy game. Player can do craft, cook, fish, and farm with
+                                friends. </p>
+                            <p>I was the member of co-development team.</p>
+                            <div style={{display: "flex", alignItems: "center"}}>
+                                <p>The game is built by</p>
+                                <StandardButton className="SummaryEngineButton" onClick={() => {
+                                    window.open(commonUrl.unrealUrl)
+                                }}>
+                                    <EngineLogo/>
+                                    <div style={{margin: "0 5px", fontSize: "20px"}}>UnrealEngine</div>
+                                </StandardButton>
+                            </div>
+                            <p>Visit following page to get detail information:</p>
+                            <div style={{display: "flex", alignItems: "center"}}>
+                                <StandardButton className="SummaryEngineButton" onClick={() => {
+                                    window.open(webSiteUrl)
+                                }}>
+                                    <WebsiteIcon/>
+                                    <div style={{margin: "0 5px", fontSize: "20px"}}>Website</div>
+                                </StandardButton>
+                                <StandardButton className="SummaryEngineButton" onClick={() => {
+                                    window.open(steamUrl)
+                                }}>
+                                    <SteamLogo/>
+                                    <div style={{margin: "0 5px", fontSize: "20px"}}>SteamPage</div>
+                                </StandardButton>
+                                <StandardButton className="SummaryEngineButton" onClick={() => {
+                                    window.open(nintendoUrl)
+                                }}>
+                                    <NSLogo/>
+                                    <div style={{margin: "0 5px", fontSize: "20px"}}>NintendoStore</div>
+                                </StandardButton>
+                            </div>
+                            <p></p>
                         </div>
-                        <div style={{ position: "absolute", bottom: "5px", width: "10vw", maxWidth: "150px"}} >
-                            <img style={{ width: "100%" }}
-                                 src={require("../assets/past_project_resources/palia/npc_1.png")}
-                            />
-                        </div>
-                        <div style={{ position: "absolute", bottom: "5px", right: "0px",
-                            minWidth: "200px", maxWidth: "770px", width: "50vw" }}>
-                            <img style={{ width: "100%" }}
+                        <div style={{
+                            position: "absolute", bottom: "5px", left: "0px",
+                            minWidth: "200px", maxWidth: "700px", width: "45vw"
+                        }}>
+                            <img style={{width: "100%"}}
                                  src={require("../assets/past_project_resources/palia/npc_2.webp")}
                             />
                         </div>

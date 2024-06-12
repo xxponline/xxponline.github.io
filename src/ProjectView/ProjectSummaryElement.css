@@ -6,13 +6,13 @@
 
 .StandardProjectSummaryElementTitle
 {
-    padding: 20px 10%;
+    padding: 20px 10px 20px 100px;
 }
 
 .StandardProjectSummaryElementTitle > div {
     font-family: Quicksand, Merriweather;
     text-align: center;
-    background-color: #FFFFFFA0;
+    background-color: #FFFFFFC0;
     display: flex;
     justify-content: space-between;
     z-index: 1;
@@ -42,8 +42,8 @@
 .SummaryEngineButtonWithoutClick >svg,
 .SummaryEngineButton > svg
 {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
 }
 
 .SummaryPublishButton

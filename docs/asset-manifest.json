@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.ded5120e.css",
-    "main.js": "/static/js/main.7f45389f.js",
+    "main.js": "/static/js/main.1cd51cd8.js",
     "static/js/453.0050f06a.chunk.js": "/static/js/453.0050f06a.chunk.js",
     "static/media/3.webp": "/static/media/3.60b3b60471bb7c8da321.webp",
     "static/media/2.webp": "/static/media/2.1f5475de917870584d7b.webp",
     "static/media/1.webp": "/static/media/1.aebabea6de5a661c9ca0.webp",
     "static/media/5.webp": "/static/media/5.6e729d7a9ee1622e6fd4.webp",
     "static/media/6.webp": "/static/media/6.a28b3d59a6d0454e3fc1.webp",
+    "static/media/ai_editor.png": "/static/media/ai_editor.eb8de41d43fe645a130f.png",
     "static/media/4.webp": "/static/media/4.41731eee9680d908f77d.webp",
     "static/media/npc_1.png": "/static/media/npc_1.cc145557acc1e20b65d4.png",
     "static/media/2.jpeg": "/static/media/2.558a9c5a260652ea33e9.jpeg",
@@ -36,11 +37,13 @@
     "static/media/actionscript-svgrepo-com.svg": "/static/media/actionscript-svgrepo-com.13366205521d3f7d7109907e221b67cf.svg",
     "static/media/rust-svgrepo-com.svg": "/static/media/rust-svgrepo-com.52c3ff005410411d21148a2c2a65623e.svg",
     "static/media/lua-svgrepo-com.svg": "/static/media/lua-svgrepo-com.77c55820489ac299773077227ebeb875.svg",
+    "static/media/react-svgrepo-com.svg": "/static/media/react-svgrepo-com.92e3ee7555b4f09db8d9f160ca150bb5.svg",
     "static/media/user-interface-svgrepo-com.svg": "/static/media/user-interface-svgrepo-com.5a599bf48c6eecd8f699d7e6b9e1ade6.svg",
     "static/media/nodejs02-svgrepo-com.svg": "/static/media/nodejs02-svgrepo-com.1736f3d1a5cafb02ff9338cc1d769b0a.svg",
     "static/media/github-142-svgrepo-com.svg": "/static/media/github-142-svgrepo-com.5531be85d7a8d6f333e5c7136944a022.svg",
     "static/media/cpp3-svgrepo-com.svg": "/static/media/cpp3-svgrepo-com.0ac280e12337ccd45b73e5fad63d0e4e.svg",
     "static/media/url-internet-svgrepo-com.svg": "/static/media/url-internet-svgrepo-com.bf7f2d6320f865cfe316c292c61e3fce.svg",
+    "static/media/go-svgrepo-com.svg": "/static/media/go-svgrepo-com.e2379110a363545c3b9a382525e73806.svg",
     "static/media/python-svgrepo-com.svg": "/static/media/python-svgrepo-com.488bdeab8b8535b3561d8ac221f2449a.svg",
     "static/media/csharp-svgrepo-com.svg": "/static/media/csharp-svgrepo-com.9b772e0f6f0134a6a1cd0b9ed1f00e0b.svg",
     "static/media/gamepad-svgrepo-com.svg": "/static/media/gamepad-svgrepo-com.d531c5d195f1a338f59ecac144bb8cd2.svg",
@@ -59,11 +62,11 @@
     "index.html": "/index.html",
     "static/media/email-1-svgrepo-com.svg": "/static/media/email-1-svgrepo-com.51013344a07c496679158e9a7cf9940d.svg",
     "main.ded5120e.css.map": "/static/css/main.ded5120e.css.map",
-    "main.7f45389f.js.map": "/static/js/main.7f45389f.js.map",
+    "main.1cd51cd8.js.map": "/static/js/main.1cd51cd8.js.map",
     "453.0050f06a.chunk.js.map": "/static/js/453.0050f06a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ded5120e.css",
-    "static/js/main.7f45389f.js"
+    "static/js/main.1cd51cd8.js"
   ]
 }

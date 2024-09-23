@@ -16,6 +16,7 @@ import {ReactComponent as UnrealLogo} from "../assets/icons/engine_framework/unr
 import {ReactComponent as CocosLogo} from "../assets/icons/engine_framework/cocos-svgrepo-com.svg";
 import {ReactComponent as GodotLogo} from "../assets/icons/engine_framework/godot-engine-svgrepo-com.svg";
 import {ReactComponent as NodeLogo} from "../assets/icons/engine_framework/nodejs02-svgrepo-com.svg";
+import {ReactComponent as ReactLogo} from "../assets/icons/engine_framework/react-svgrepo-com.svg";
 
 import {ReactComponent as GamePlayFieldIcon} from "../assets/icons/fields/gamepad-svgrepo-com.svg";
 import {ReactComponent as ToolsFieldIcon} from "../assets/icons/fields/tools-svgrepo-com.svg";
@@ -81,6 +82,11 @@ function Skills() {
                             }}>
                                 <RustLogo/><span>Rust</span>
                             </StandardButton>
+                            <StandardButton className="SkillItem" onClick={() => {
+                                window.open(commonUrl.goUrl)
+                            }}>
+                                <GoLogo/><span>Golang</span>
+                            </StandardButton>
                         </div>
                         <div style={{padding: "10px 0px"}}>
                             <div style={{fontFamily: "Quicksand, Arial", fontSize: "18px", padding: "10px 10px"}}>Engine
@@ -105,6 +111,11 @@ function Skills() {
                                 window.open(commonUrl.nodeJsUrl)
                             }}>
                                 <NodeLogo/><span>Node JS</span>
+                            </StandardButton>
+                            <StandardButton className="SkillItem" onClick={() => {
+                                window.open(commonUrl.React)
+                            }}>
+                                <ReactLogo/><span>React</span>
                             </StandardButton>
                         </div>
                         <div style={{padding: "10px 0px"}}>

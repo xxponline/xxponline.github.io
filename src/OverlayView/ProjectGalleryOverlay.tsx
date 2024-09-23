@@ -36,6 +36,9 @@ function ProjectGalleryOverlay(props: GalleryProps) {
         case OverlayViewState.CV:
             content = <ProjectResume/>
             break;
+        case OverlayViewState.AIEditor:
+            content = <ProjectAIEditor/>
+            break;
     }
 
     return (
@@ -185,6 +188,23 @@ function ProjectNonlinearEditor() {
     return (
         <div style={{padding: "30px"}}>
             <YouTube videoId="szNwH_OHYNo" opts={opts}/>
+        </div>
+    );
+}
+
+function ProjectAIEditor() {
+    const opts = {
+        height: '720',
+        width: '1280',
+        playerVars: {
+            // https://developers.google.com/youtube/player_parameters
+            autoplay: 0,
+        },
+    };
+
+    return (
+        <div style={{padding: "30px"}}>
+            <YouTube videoId="b3-DPEmz008" opts={opts}/>
         </div>
     );
 }

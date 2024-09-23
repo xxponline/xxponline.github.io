@@ -13,4 +13,5 @@ export default class commonUrl{
     public static cocosUrl:string = "https://www.cocos.com/en/creator";
     public static godotUrl:string = "https://godotengine.org/";
     public static nodeJsUrl:string = "https://nodejs.org/";
+    public static React:string = "https://react.dev/";
 }

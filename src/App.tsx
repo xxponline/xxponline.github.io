@@ -14,6 +14,7 @@ import IndividualStuffNavBar from "./Navigation/IndividualStuffNavBar";
 import ProjectSummaryElement_NonlinearEditor from "./ProjectView/ProjectSummaryElement_NonlinearEditor";
 import ProjectGalleryOverlay from "./OverlayView/ProjectGalleryOverlay";
 import {OverlayViewState} from "./OverlayView/OverlayViewState";
+import {ProjectSummaryElement_AIEditor} from "./ProjectView/ProjectSummaryElement_AIEditor";
 
 function App() {
     const [ overlayState, setOverlayState ] = React.useState<OverlayViewState>(OverlayViewState.None);
@@ -31,7 +32,7 @@ function App() {
                   <ProjectSummaryElement_NonlinearEditor onClickThumbnail={() => setOverlayState(OverlayViewState.NonLinearEditor)}/>
               </div>
               <div style={{width: "50%"}}>
-
+                  <ProjectSummaryElement_AIEditor onClickThumbnail={() => setOverlayState(OverlayViewState.AIEditor)} />
               </div>
           </div>
           <FeaturedProjectNavBar/>

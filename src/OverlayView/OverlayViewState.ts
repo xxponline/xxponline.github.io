@@ -6,5 +6,6 @@ export enum OverlayViewState {
     ProjectGL,
     ProjectSS,
     ProjectHotel,
-    ProjectMerge
+    ProjectMerge,
+    AIEditor
 }

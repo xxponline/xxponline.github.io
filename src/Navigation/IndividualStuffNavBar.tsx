@@ -15,7 +15,10 @@ function IndividualStuffNavBar() {
                 </div>
                 <StandardButton onClick={() => {
                     GoSectionViewCenter("#project_nonlinear_editor_section")
-                }}>Nonlinear Editor & SampleAnimation-Bind Exhibit</StandardButton>
+                }}>Nonlinear Editor</StandardButton>
+                <StandardButton onClick={() => {
+                    GoSectionViewCenter("#project_ai_editor_section")
+                }}>Individual AI Editor</StandardButton>
             </nav>
 
             <nav className={"NavList"}>

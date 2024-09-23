@@ -18,7 +18,7 @@ class ProjectSummaryElement_NonlinearEditor extends React.Component<IProjectSumm
                                     color: "#594F42", fontSize: "40px",
                                     letterSpacing: ".2em", padding: "0 10px"
                                 }}>
-                                    NONLINEAR EDITOR & ANIM-BIND EXHIBIT
+                                    Nonlinear Editor
                                 </div>
                             </div>
                         </div>

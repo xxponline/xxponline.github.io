@@ -33,8 +33,13 @@ function ProjectGalleryOverlay(props: GalleryProps) {
         case OverlayViewState.ProjectMerge:
             content = <ProjectMergeGallery/>
             break;
-        case OverlayViewState.CV:
-            content = <ProjectResume/>
+        case OverlayViewState.CV_EN:
+            console.log("en");
+            content = <ProjectResume_En/>
+            break;
+        case OverlayViewState.CV_CN:
+            console.log("cn");
+            content = <ProjectResume_Cn/>
             break;
         case OverlayViewState.AIEditor:
             content = <ProjectAIEditor/>
@@ -165,10 +170,19 @@ function ProjectMergeGallery()
     );
 }
 
-function ProjectResume() {
+function ProjectResume_En() {
     return (
         <div style={{width: "1280px", height: "720px", padding: "30px"}}>
-            <iframe src={require("../assets/past_project_resources/resume/V24.2.pdf")}
+            <iframe src={require("../assets/past_project_resources/resume/V26_en.pdf")}
+                    style={{width: '100%', height: '100%'}}/>
+        </div>
+    );
+}
+
+function ProjectResume_Cn() {
+    return (
+        <div style={{width: "1280px", height: "720px", padding: "30px"}}>
+            <iframe src={require("../assets/past_project_resources/resume/V26_cn.pdf")}
                     style={{width: '100%', height: '100%'}}/>
         </div>
     );

@@ -1,6 +1,7 @@
 export enum OverlayViewState {
     None,
-    CV,
+    CV_EN,
+    CV_CN,
     NonLinearEditor,
     ProjectPalia,
     ProjectGL,

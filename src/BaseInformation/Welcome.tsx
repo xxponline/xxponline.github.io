@@ -5,7 +5,7 @@ import { ReactComponent as LinkedInIcon } from "../assets/icons/contact/linkedin
 import { ReactComponent as ResumeIcon} from "../assets/icons/contact/resume-4-svgrepo-com.svg";
 import StandardButton from "../Common/StandardButton";
 
-function Welcome(props : { onClickResume : () => void}){
+function Welcome(props : { onClickResume_EN : () => void, onClockResume_CN : () => void}){
     return(
         <section id="welcome_section" style={{ height: "90vh", display: "flex", justifyContent: "center", alignItems: "center"}}>
             <header style={{
@@ -24,13 +24,18 @@ function Welcome(props : { onClickResume : () => void}){
                         applications.
                         <p/>
                         <div style={{display: "flex", alignItems: "center"}}>
-                            Get my
+                            My Background?
                             <StandardButton style={{display: "flex", alignItems: "center"}}
-                                            onClick={props.onClickResume}>
+                                            onClick={props.onClickResume_EN}>
                                 <ResumeIcon style={{height: "40px", width: "40px", margin: "0 5px"}}/>
                                 <span style={{fontSize: "15px"}}>Resume</span>
                             </StandardButton>
-                            to review my background.
+                            Or
+                            <StandardButton style={{display: "flex", alignItems: "center"}}
+                                            onClick={props.onClockResume_CN}>
+                                <ResumeIcon style={{height: "40px", width: "40px", margin: "0 5px"}}/>
+                                <span style={{fontSize: "15px"}}>个人简历</span>
+                            </StandardButton>
                         </div>
                     </h2>
                 </div>

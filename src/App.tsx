@@ -24,7 +24,7 @@ function App() {
           <ProjectGalleryOverlay state={overlayState} setState={setOverlayState}/>
 
           <NavBar/>
-          <Welcome onClickResume={() => setOverlayState(OverlayViewState.CV)}/>
+          <Welcome onClickResume_EN={() => setOverlayState(OverlayViewState.CV_EN)} onClockResume_CN={() => setOverlayState(OverlayViewState.CV_CN)}/>
           <Skills/>
           <IndividualStuffNavBar/>
           <div style={{display: "flex", backgroundColor: "#FEF4E6"}}>
